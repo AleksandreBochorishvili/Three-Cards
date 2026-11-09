@@ -1,40 +1,143 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="A friendly, practical guide to the building blocks of the web: HTML, CSS, JavaScript, and React."
+    >
+    <meta name="theme-color" content="#f7f8f4">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="style.css">
-    <title>Three Cards</title>
+    <title>Three Cards — A guide to the web</title>
   </head>
   <body>
-    <head>
-      <h1>Practical homework — „Three Cards“</h1>
-      <nav>
-        <a href="#cards">Cards</a>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Three Cards home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>three<span class="brand-light">cards</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#topics">The topics</a>
+        <a class="nav-cta" href="#about">About this guide <span aria-hidden="true">↗</span></a>
       </nav>
-    </head>
+    </header>
+
     <main>
-      <section>
-        <div class="container">
-          <div class="card">
-            <h2>HTML</h2>
-            <p>HTML is used to create the structure of a web page.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquam consectetur porro architecto! Eaque porro reiciendis fugiat minima quas delectus explicabo cumque, id recusandae! Facilis asperiores eos dolorem mollitia sit!</p>
-          </div>
-          <div class="card">
-            <h2>CSS</h2>
-            <p>CSS is used to style and design web pages.</p>
-          </div>
-          <div class="card">
-            <h2>JavaScript</h2>
-            <p>JavaScript makes web pages interactive.</p>
-          </div>
-          <div id="long-Card" class="card">
-            <h2>React</h2>
-            <p>React allows developers to create user interfaces using components, which are independent, reusable pieces of UI such as buttons, forms, or entire pages</p>
-          </div>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A beginner's guide to web software</p>
+          <h1 id="hero-title">Start with the software.<br>Grow your <span>design eye.</span></h1>
+          <p class="hero-description">
+            Get comfortable with the tools behind the web, one at a time.
+            Knowing every tool won't automatically make your designs better;
+            thoughtful choices and practice matter just as much.
+          </p>
+          <a class="primary-button" href="#topics">Explore the topics <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="orbit-center"><span>&lt;/&gt;</span></div>
+          <div class="orbit-tag tag-html">HTML</div>
+          <div class="orbit-tag tag-css">CSS</div>
+          <div class="orbit-tag tag-js">JS</div>
+          <div class="orbit-tag tag-react">R</div>
+        </div>
+        <div class="hero-footnote">
+          <span class="footnote-line"></span>
+          <span>CURIOUS BY NATURE. BUILT FOR BEGINNERS.</span>
         </div>
       </section>
+
+      <section class="topics-section" id="topics" aria-labelledby="topics-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Learn the software</p>
+            <h2 id="topics-title">Four tools to get started.</h2>
+          </div>
+          <p class="section-intro">Learn what each tool does, then focus on using it with intention.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="topic-card card-html">
+            <div class="card-topline"><span class="card-number">01</span><span class="card-label">THE STRUCTURE</span></div>
+            <div class="topic-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M11 8h26l-2.5 29L24 42l-10.5-5L11 8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M18 18h13M19 25h11M20 32l4 2 4-2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>HTML</h3>
+            <p>The essential skeleton of a page. HTML gives your content meaning and structure, from headings to links.</p>
+            <a class="card-footer" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer"><span>Start with the basics</span><span class="arrow" aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="topic-card card-css">
+            <div class="card-topline"><span class="card-number">02</span><span class="card-label">THE PERSONALITY</span></div>
+            <div class="topic-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M11 8h26l-2.5 29L24 42l-10.5-5L11 8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="m18 20 3-3-3-3m12 0-3 3 3 3m-7 11 4-14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>CSS</h3>
+            <p>Color, type, and layout. CSS turns a plain structure into a polished experience that feels like you.</p>
+            <a class="card-footer" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer"><span>Make it your own</span><span class="arrow" aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="topic-card card-js">
+            <div class="card-topline"><span class="card-number">03</span><span class="card-label">THE INTERACTION</span></div>
+            <div class="topic-icon icon-js" aria-hidden="true"><span>JS</span></div>
+            <h3>JavaScript</h3>
+            <p>Make things happen. JavaScript adds behavior, responds to people, and brings pages to life.</p>
+            <a class="card-footer" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><span>Add a little action</span><span class="arrow" aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="topic-card card-react">
+            <div class="card-topline"><span class="card-number">04</span><span class="card-label">THE TOOLKIT</span></div>
+            <div class="topic-icon icon-react" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <ellipse cx="24" cy="24" rx="19" ry="7.5" stroke="currentColor" stroke-width="2"/>
+                <ellipse cx="24" cy="24" rx="19" ry="7.5" stroke="currentColor" stroke-width="2" transform="rotate(60 24 24)"/>
+                <ellipse cx="24" cy="24" rx="19" ry="7.5" stroke="currentColor" stroke-width="2" transform="rotate(120 24 24)"/>
+                <circle cx="24" cy="24" r="3" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>React</h3>
+            <p>Build with reusable pieces. React helps you organize interactive interfaces into components.</p>
+            <a class="card-footer" href="https://react.dev/learn" target="_blank" rel="noopener noreferrer"><span>See how it connects</span><span class="arrow" aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="about-icon" aria-hidden="true">✳</div>
+        <div>
+          <p class="eyebrow">Software is a starting point</p>
+          <h2 id="about-title">Great design takes more<br>than knowing the tools.</h2>
+        </div>
+        <p class="about-copy">Practice, observation, and thoughtful choices turn software skills into better experiences. Keep experimenting and asking “what if?”</p>
+        <a class="about-link" href="#topics">Take another look <span aria-hidden="true">↗</span></a>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#" aria-label="Three Cards home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>three<span class="brand-light">cards</span></span>
+      </a>
+      <p>Made for curious minds, one card at a time.</p>
+      <a href="#hero-title">Back to top ↑</a>
+    </footer>
   </body>
 </html>
